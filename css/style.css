@@ -1,0 +1,16 @@
+
+body {
+    font-family: 'Kalpurush', sans-serif;
+    background: #f0f0f0;
+    padding: 20px;
+}
+header {
+    background: #007BFF;
+    color: white;
+    padding: 10px;
+}
+nav a {
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+}

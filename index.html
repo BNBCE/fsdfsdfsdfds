@@ -2,20 +2,176 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-    <meta charset="UTF-8">
-    <title>ছাত্র-ছাত্রীদের পোর্টাল</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>BNBCE2</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url("https://raw.githubusercontent.com/BNBCE/bnbce2/refs/heads/main/Image/0822a3c2d3ae4fc69254e581dd1be852.webp");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      font-family: Arial, sans-serif;
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 30px 20px 10px;
+    }
+
+    .header img {
+      height: 160px;
+      margin-right: 20px;
+    }
+
+    .header h1 {
+      font-size: 48px;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .nav-line {
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    .nav-line a {
+      color: yellow;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+    }
+
+    .event-section {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      flex: 1;
+    }
+
+    .event-image {
+      width: 65%;
+    }
+
+    .event-image img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .student-slider-wrapper {
+      width: 30%;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .student-slider {
+      width: 120px;
+      height: 400px;
+      overflow: hidden;
+      position: relative;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 10px;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .student-slider .slides {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      animation: slideUp 10s infinite;
+    }
+
+    .student-slider img {
+      width: 100px;
+      height: 140px;
+      object-fit: cover;
+      border: 2px solid white;
+      border-radius: 6px;
+      display: block;
+      margin: 0 auto 15px;
+      background-color: white;
+      padding: 5px;
+    }
+
+    @keyframes slideUp {
+      0% { transform: translateY(0); }
+      25% { transform: translateY(-160px); }
+      50% { transform: translateY(-320px); }
+      75% { transform: translateY(-480px); }
+      100% { transform: translateY(0); }
+    }
+
+    .footer {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+    }
+
+    .footer h3 {
+      margin-bottom: 5px;
+    }
+
+    .footer p {
+      margin: 4px 0;
+    }
+
+    .footer, .footer-strip {
+      flex-shrink: 0;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>স্বাগতম ছাত্র-ছাত্রীদের ডিজিটাল পোর্টালে</h1>
-        <nav>
-            <a href="login.html">লগইন</a>
-            <a href="dashboard.html">ড্যাশবোর্ড</a>
-        </nav>
-    </header>
-    <main>
-        <p>এই পোর্টালে প্রতিদিনের ক্লাস ভিডিও এবং PDF পাওয়া যাবে।</p>
-    </main>
+
+  <div class="header">
+    <img src="https://raw.githubusercontent.com/BNBCE/bnbce2/main/Image/logo.jpg" alt="BNBCE Logo">
+    <h1>স্বাগতম বড়াবেরিয়া জাতীয় কম্পিউটার প্রশিক্ষণ কেন্দ্র</h1>
+  </div>
+
+  <div class="nav-line">
+    <a href="#">Student Login</a>
+    <a href="#">admin-login-site</a>
+    <a href="#">Courses</a>
+  </div>
+
+  <h2>আমাদের ইভেন্ট গ্যালারি</h2>
+
+  <div class="event-section">
+    <div class="event-image">
+      <img src="https://raw.githubusercontent.com/BNBCE/bnbce2/main/Image/EVENT/475753551_1004680331684652_4292172640850177065_n.jpg" alt="Event Image">
+    </div>
+
+    <div class="student-slider-wrapper">
+      <div class="student-slider">
+        <div class="slides">
+          <img src="https://raw.githubusercontent.com/BNBCE/bnbce2/main/Image/student1.jpg" alt="Student 1">
+          <img src="https://raw.githubusercontent.com/BNBCE/bnbce2/main/Image/student2.jpg" alt="Student 2">
+          <img src="https://raw.githubusercontent.com/BNBCE/bnbce2/main/Image/student3.jpg" alt="Student 3">
+          <img src="https://raw.githubusercontent.com/BNBCE/bnbce2/main/Image/student4.jpg" alt="Student 4">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <h3>About</h3>
+    <p>আমাদের প্রতিষ্ঠান জাতীয় কম্পিউটার প্রশিক্ষণের জন্য নিবেদিত।</p>
+
+    <h3>Contact</h3>
+    <p>ফোন: ৯০৫১৫৩৬৫৯৯</p>
+    <p>ইমেইল: info@bnbce.org</p>
+
+    <h3>Address</h3>
+    <p>বড়াবেরিয়া, আরামবাগ, পশ্চিমবঙ্গ - ৭১২৬২১</p>
+  </div>
+
 </body>
 </html>
